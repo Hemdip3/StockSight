@@ -38,6 +38,7 @@ StockSight is an Electron desktop application for real-time stock data visualiza
 ### Running the Application
 ```bash
 npm start
+```
 
 ### Project Structure
 
