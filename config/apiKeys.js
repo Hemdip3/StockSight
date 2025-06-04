@@ -3,6 +3,6 @@
 
 module.exports = {
     alphaVantageKeys: [
-        'ZSI1UUVGJLJITA81',
+
     ],
 };
