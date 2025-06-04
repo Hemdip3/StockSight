@@ -1,1 +1,57 @@
 # StockSight
+
+## Overview
+StockSight is an Electron desktop application for real-time stock data visualization, including price tracking and historical charts.
+
+## Features
+* Real-time stock price tracking
+* Historical chart visualization
+* Key financial metrics display
+
+## Setup
+
+### Prerequisites
+* [Node.js](https://nodejs.org/) (LTS recommended)
+* [Git](https://git-scm.com/)
+
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Hemdip3/StockSight.git](https://github.com/Hemdip3/StockSight.git)
+    ```
+2.  **Navigate to the project:**
+    ```bash
+    cd StockSight
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+### API Key Configuration (Crucial!)
+1.  Get a free API key from [Alpha Vantage](https://www.alphavantage.co/support/#api-key).
+2.  Open `config/config.js` and replace `'YOUR_ALPHA_VANTAGE_API_KEY'` with your actual key:
+    ```javascript
+    const API_KEY = 'YOUR_ACTUAL_API_KEY_GOES_HERE';
+    ```
+
+### Running the Application
+```bash
+npm start
+
+Project Structure
+
+StockSight/
+├── main.js                 # Main Electron process
+├── index.html              # Main application window HTML
+├── preload.js              # Preload script for secure renderer-main communication
+├── package.json            # Project dependencies and scripts
+├── config/
+│   └── config.js           # API key configuration
+├── js/
+│   ├── stockService.js     # Logic for fetching stock data
+│   ├── chartManager.js     # Handles chart display
+│   └── renderer.js         # Renderer process script (UI logic)
+├── css/
+│   └── style.css           
+└── README.md               
