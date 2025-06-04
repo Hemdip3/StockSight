@@ -7,7 +7,7 @@ StockSight is an Electron desktop application for real-time stock data visualiza
 * Real-time stock price tracking
 * Historical chart visualization
 * Key financial metrics display
-Note: This application works for stocks listed on NASDAQ and New York Stock Exchange (NYSE). It does not support stocks from BSE or NSE, so data for those exchanges will not be displayed.
+* Note: This application works for stocks listed on NASDAQ and New York Stock Exchange (NYSE). It does not support stocks from BSE or NSE, so data for those exchanges will not be displayed.
 
 ## Setup
 
