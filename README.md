@@ -42,6 +42,7 @@ npm start
 
 ### Project Structure
 
+```
 StockSight/
 ├── main.js                 # Main Electron process
 ├── index.html              # Main application window HTML
@@ -57,3 +58,4 @@ StockSight/
 ├── css/
 │   └── style.css           # Application styling
 └── README.md               # This file!
+```
