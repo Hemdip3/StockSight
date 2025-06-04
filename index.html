@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>StockSight App</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; object-src 'self'; connect-src 'self' https://www.alphavantage.co;" />
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>StockSight</h1>
+    </div>
+
+    <div class="main-content-wrapper">
+        <div class="stock-controls">
+            <div class="input-group">
+                <label for="stockSymbol">Stock Symbol:</label>
+                <input type="text" id="stockSymbol" placeholder="e.g., IBM">
+            </div>
+            <div class="input-group">
+                <label for="timeRange">Time Range:</label>
+                <select id="timeRange">
+                    <option value="daily">Daily (Last 1 Day)</option>
+                    <option value="weekly">Weekly (Past 7 Days)</option>
+                    <option value="monthly">Monthly (Past 1 Month)</option>
+                    <option value="yearly">Yearly (Past 1 Year)</option>
+                    <option value="5year">5-Year</option>
+                </select>
+            </div>
+            <button id="fetchDataButton">Fetch Data</button>
+        </div>
+
+        <div class="chart-container">
+            <h2>Stock Price Trend</h2>
+            <div id="stockChart"></div> 
+            <div id="statusMessage" class="status-message hidden"></div>
+        </div>
+
+        <div class="key-metrics">
+            <div class="metric-item">
+                <div class="metric-label">Open</div>
+                <div class="metric-value" id="metricOpen">--</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-label">High</div>
+                <div class="metric-value" id="metricHigh">--</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-label">Low</div>
+                <div class="metric-value" id="metricLow">--</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-label">Close</div>
+                <div class="metric-value" id="metricClose">--</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-label">Volume</div>
+                <div class="metric-value" id="metricVolume">--</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/chartManager.js"></script>
+    <script src="./js/renderer.js"></script> 
+</body>
+</html>
