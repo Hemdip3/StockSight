@@ -39,7 +39,7 @@ StockSight is an Electron desktop application for real-time stock data visualiza
 ```bash
 npm start
 
-## Project Structure
+### Project Structure
 
 StockSight/
 ├── main.js                 # Main Electron process
